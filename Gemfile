@@ -19,14 +19,16 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'redis-rails'
-gem 'dotenv-rails', '~> 2.7.6'
-gem 'faraday', '~> 1.3.0'
+gem 'faraday'
 # new versions are slow on rails 6
 gem 'sassc', '~> 2.1.0'
 gem 'sidekiq'
-gem 'rack-cors'
+gem 'sidekiq'
+gem 'sidekiq-scheduler'
+gem 'turbovax', '~> 0.0.3'
 
 group :development, :test do
+  gem 'dotenv-rails', '~> 2.7.6'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end

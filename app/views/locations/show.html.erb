@@ -11,8 +11,8 @@
 </p>
 
 <p>
-  <strong>Address:</strong>
-  <%= @location.address %>
+  <strong>Full Address:</strong>
+  <%= @location.full_address %>
 </p>
 
 <p>
@@ -31,8 +31,8 @@
 </p>
 
 <p>
-  <strong>Portal uuid:</strong>
-  <%= @location.portal_uuid %>
+  <strong>Portal id:</strong>
+  <%= @location.portal_id %>
 </p>
 
 <p>
@@ -43,6 +43,11 @@
 <p>
   <strong>Longitude:</strong>
   <%= @location.longitude %>
+</p>
+
+<p>
+  <strong>Timezone:</strong>
+  <%= @location.time_zone %>
 </p>
 
 <p>
