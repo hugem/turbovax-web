@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uuid:</strong>
+  <%= @location.uuid %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @location.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @location.address %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @location.area %>
+</p>
+
+<p>
+  <strong>Enabled:</strong>
+  <%= @location.enabled %>
+</p>
+
+<p>
+  <strong>Portal key:</strong>
+  <%= @location.portal_key %>
+</p>
+
+<p>
+  <strong>Portal uuid:</strong>
+  <%= @location.portal_uuid %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @location.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @location.longitude %>
+</p>
+
+<p>
+  <strong>Last available:</strong>
+  <%= @location.last_available %>
+</p>
+
+<%= link_to 'Edit', edit_location_path(@location) %> |
+<%= link_to 'Back', locations_path %>

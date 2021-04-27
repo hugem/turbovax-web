@@ -1,0 +1,67 @@
+<%= form_with(model: location) do |form| %>
+  <% if location.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(location.errors.count, "error") %> prohibited this location from being saved:</h2>
+
+      <ul>
+        <% location.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :uuid %>
+    <%= form.text_field :uuid %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :area %>
+    <%= form.text_field :area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :enabled %>
+    <%= form.check_box :enabled %>
+  </div>
+
+  <div class="field">
+    <%= form.label :portal_key %>
+    <%= form.text_field :portal_key %>
+  </div>
+
+  <div class="field">
+    <%= form.label :portal_uuid %>
+    <%= form.text_field :portal_uuid %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_available %>
+    <%= form.date_select :last_available %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

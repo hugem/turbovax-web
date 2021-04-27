@@ -15,14 +15,16 @@ gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 5.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
-# Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+
+gem 'redis-rails'
+gem 'dotenv-rails', '~> 2.7.6'
+gem 'faraday', '~> 1.3.0'
+# new versions are slow on rails 6
+gem 'sassc', '~> 2.1.0'
+gem 'sidekiq'
+gem 'rack-cors'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

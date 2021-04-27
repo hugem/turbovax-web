@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uuid: MyString
+  name: MyString
+  address: MyString
+  area: MyString
+  enabled: false
+  portal_key: MyString
+  portal_uuid: MyString
+  latitude: 1.5
+  longitude: 1.5
+  last_available: 2021-04-26
+
+two:
+  uuid: MyString
+  name: MyString
+  address: MyString
+  area: MyString
+  enabled: false
+  portal_key: MyString
+  portal_uuid: MyString
+  latitude: 1.5
+  longitude: 1.5
+  last_available: 2021-04-26
