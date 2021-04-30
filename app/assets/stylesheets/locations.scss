@@ -1,3 +1,39 @@
 // Place all the styles related to the Locations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.card {
+  border: 1px solid #AAA;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.appointment {
+  display: inline-block;
+  padding: .5rem;
+  margin: .25rem 0;
+  border: 1px solid #BBB;
+  min-width: 4rem;
+  text-align: center;
+}
+
+.appointment-date {
+  display: inline-block;
+  min-width: 6rem;
+}
+
+.appointments-block {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.summary {
+  padding: .5rem;
+  margin: 3rem 0;
+  display: flex;
+
+  .half {
+    width: 50%;
+    text-align: center;
+  }
+}

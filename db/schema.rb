@@ -28,7 +28,8 @@ ActiveRecord::Schema.define(version: 2021_04_27_023332) do
     t.string "time_zone"
     t.string "vaccine_types"
     t.json "appointments"
-    t.datetime "last_available"
+    t.integer "appointment_count", default: 0
+    t.datetime "last_available_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

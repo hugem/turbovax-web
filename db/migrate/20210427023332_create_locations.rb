@@ -13,7 +13,8 @@ class CreateLocations < ActiveRecord::Migration[6.1]
       t.string :time_zone
       t.string :vaccine_types
       t.json :appointments
-      t.datetime :last_available
+      t.integer :appointment_count, default: 0
+      t.datetime :last_available_at
 
       t.timestamps
     end

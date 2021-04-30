@@ -1,0 +1,25 @@
+<div class="card">
+  <h2><%= "#{location.name} [#{location.portal.name}]" %></h2>
+  <%= button_to "Reserve", location.portal.public_url, method: :get, disabled: !LocationsHelper.enable_reserve_button?(location) %>
+  <h4><%= link_to location.full_address, LocationsHelper.google_maps_url(location.full_address), target: "_blank" %></h4>
+  <% if location.vaccine_types.present? %>
+  <div>
+    Vaccine Type: <%= Array(location.vaccine_types).to_sentence %>
+  </div>
+  <% end %>
+  <% if location.last_available_at.present? %>
+    <p>Last available: <%= time_ago_in_words(location.last_available_at) %></p>
+  <% end %>
+  <div>
+    <div class="appointments-block">
+      <% location.parsed_appointments_by_date.each do |day, appointments| %>
+        <div>
+          <span class="appointment-date"><%= LocationsHelper.format_appointment_date(day) %></span>
+          <% appointments.each do |appointment| %>
+            <span class="appointment"><%= LocationsHelper.format_appointment_time(appointment) %></span>
+          <% end %>
+        </div>
+      <% end %>
+      </div>
+    </div>
+</div>

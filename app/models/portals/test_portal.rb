@@ -17,8 +17,6 @@ class Portals::TestPortal < Turbovax::Portal
         }
       end
 
-
-
       Turbovax::Location.new(
         name: location_json["clinic_name"],
         full_address: location_json["address"],

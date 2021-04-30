@@ -1,0 +1,10 @@
+<div class="summary">
+  <div class="half">
+  <h3>Last Updated</h3>
+  <%= LocationsHelper.last_updated(@locations) %>
+  </div>
+  <div class="half">
+  <h3>Appointments</h3>
+  <%= pluralize(LocationsHelper.total_appointments(@locations), "appointment") %> at <%= pluralize(LocationsHelper.total_locations(@locations), "location") %>
+  </div>
+</div>

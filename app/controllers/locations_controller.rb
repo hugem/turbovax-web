@@ -3,7 +3,7 @@ class LocationsController < ApplicationController
 
   # GET /locations or /locations.json
   def index
-    @locations = Location.all
+    @locations = Location.sort_by_last_available
   end
 
   # GET /locations/1 or /locations/1.json

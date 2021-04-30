@@ -1,33 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Locations</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Address</th>
-      <th>Portal</th>
-      <th>Vaccine Types</th>
-      <th>Appointments</th>
-      <th>Last available</th>
-      <th>Last updated</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @locations.each do |location| %>
-      <tr>
-        <td><%= location.name %></td>
-        <td><%= location.full_address %></td>
-        <td><%= PortalsHelper.find_by_key(location.portal_key).name %></td>
-        <td><%= location.vaccine_types %></td>
-        <td><%= location.formatted_appointments %></td>
-        <td><%= location.last_available.presence && time_ago_in_words(location.last_available) %></td>
-        <td><%= location.updated_at.presence && time_ago_in_words(location.updated_at) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
+<h1>Your Very Own TurboVax</h1>
+<%= render partial: "summary", locations: @locations %>
+<%= render partial: "location", collection: @locations %>
