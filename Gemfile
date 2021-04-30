@@ -25,7 +25,7 @@ gem 'sassc', '~> 2.1.0'
 gem 'sidekiq'
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
-gem 'turbovax', '~> 0.0.3'
+gem 'turbovax', '~> 0.0.4'
 
 group :development, :test do
   gem 'dotenv-rails', '~> 2.7.6'

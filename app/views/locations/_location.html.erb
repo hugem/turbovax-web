@@ -10,6 +10,10 @@
   <% if location.last_available_at.present? %>
     <p>Last available: <%= time_ago_in_words(location.last_available_at) %></p>
   <% end %>
+  <% if location.portal.notes.present? %>
+    <p>Note: <%= location.portal.notes %></p>
+  <% end %>
+  <hr>
   <div>
     <div class="appointments-block">
       <% location.parsed_appointments_by_date.each do |day, appointments| %>

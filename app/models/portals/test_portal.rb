@@ -7,6 +7,7 @@ class Portals::TestPortal < Turbovax::Portal
     data_fetcher_params
   end
   request_http_method Turbovax::Constants::GET_REQUEST_METHOD
+  notes "This is a test portal and does not require pre-registration."
 
   parse_response do |response|
     response_json = JSON.parse(response)
