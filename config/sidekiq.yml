@@ -1,6 +1,6 @@
 :schedule:
   test_portal:
-    cron: '*/5 * * * * *'   # Runs once per minute
+    cron: '* * * * *'   # Runs once per minute
     class: GetPortalDataJob
     queue: high
     args: ['Portals::TestPortal']
