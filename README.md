@@ -14,13 +14,16 @@ Fork this repo to create your very own TurboVax implementation.
 
 Did you find this code useful? Please fill out this quick, anonymous [survey](https://docs.google.com/forms/d/1h9w1X-NUXfQ2s9VdRnz0rXJkBExlZe6c98gbowTpEVw/edit) so we know where this is being used.
 
-## Dependencies
+
+## Installation
+### Dependencies
+Ensure the below are installed before continuing with the installation
 
 * [Ruby](https://www.ruby-lang.org/en/downloads/) ([rbenv](https://github.com/rbenv/rbenv) recommended)
 * [Redis](https://redis.io/topics/quickstart)
 * [Postgres](https://www.postgresql.org/download/)
 
-## Installation
+### Command Line
 
 ```
 ~ gem install foreman
@@ -28,7 +31,8 @@ Did you find this code useful? Please fill out this quick, anonymous [survey](ht
 ~ foreman start
 ```
 
-Go to [localhost:3000](http://localhost:3000/)
+Go to [localhost:3000](http://localhost:3000/) for an HTML view or [localhost:3000/locations.json](http://localhost:3000/locations.json) for JSON API endpoint.
+
 ## Overview
 Using the [turbovax gem](https://github.com/hugem/turbovax-gem), we can set up the scraper to pull data from [turbovax.info](http://api.turbovax.info/v1/test.json) test API endpoint.
 ### Gem Implementation
