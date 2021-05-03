@@ -4,8 +4,9 @@ This is an example implement of an end-to-end web vaccine appointment website. I
 
 1) Web server with HTML and JSON endpoints
 2) Scraper setup
-3) Twitter integration
-4) Background job orchestration
+3) Database to store Location and appointment data
+4) Twitter integration
+5) Background job orchestration
 
 Fork this repo to create your very own TurboVax implementation.
 
