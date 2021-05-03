@@ -10,6 +10,10 @@ This is an example implement of an end-to-end web vaccine appointment website, a
 
 Fork this repo to create your very own TurboVax implementation.
 
+## Survey Request
+
+Did you find this code useful? Please fill out this quick, anonymous [survey](https://docs.google.com/forms/d/1h9w1X-NUXfQ2s9VdRnz0rXJkBExlZe6c98gbowTpEVw/edit) so we know where this is being used.
+
 ## Dependencies
 
 * [Ruby](https://www.ruby-lang.org/en/downloads/) ([rbenv](https://github.com/rbenv/rbenv) recommended)
@@ -46,3 +50,9 @@ This gem is licensed according to [GNU General Public License v3.0](https://gith
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at [https://github.com/hugem/turbovax-web](https://github.com/hugem/turbovax-web).
+
+## Disclaimer
+
+This code should only be used for the purposes of improving accessibility to vaccines and not for private gain.
+
+This is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Intuit, Inc or any of its subsidiaries or its affiliates. The names TurboTax as well as related names, marks, emblems and images are registered trademarks of their respective owners.
