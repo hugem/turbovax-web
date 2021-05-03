@@ -1,4 +1,5 @@
 :schedule:
+  # set up a schedule for each portal
   test_portal:
     cron: '* * * * *'   # Runs once per minute
     class: GetPortalDataJob
