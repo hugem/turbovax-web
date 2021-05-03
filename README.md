@@ -1,6 +1,6 @@
-# Turbovax web
+# TurboVax Web
 
-This is an example implement of an end-to-end web vaccine appointment website. It includes:
+This is an example implement of an end-to-end web vaccine appointment website, analogous to [turbovax.info](https://www.turbovax.info/). It includes:
 
 1) Web server with HTML and JSON endpoints
 2) Scraper setup
@@ -28,7 +28,8 @@ Go to [localhost:3000](http://localhost:3000/)
 ## Overview
 Using the [turbovax gem](https://github.com/hugem/turbovax-gem), we can set up the scraper to pull data from [turbovax.info](http://api.turbovax.info/v1/test.json) test API endpoint.
 ### Gem Implementation
-* [`TestPortal`](https://github.com/hugem/turbovax-web/blob/main/app/models/portals/test_portal.rb): where the scraper is configured
+* [`config/initializers/turbovax.rb`](https://github.com/hugem/turbovax-web/blob/main/config/initializers/turbovax.rb): configure the gem (recommend using [dotenv](https://github.com/bkeepers/dotenv) to provide secrets)
+* [`TestPortal`](https://github.com/hugem/turbovax-web/blob/main/app/models/portals/test_portal.rb): where the scraper is set up
 ### Rails Models/Controllers/Services
 * [`Location`](https://github.com/hugem/turbovax-web/blob/main/app/models/location.rb): location data is saved into the database via this ActiveRecord model
 * [`LocationController`](https://github.com/hugem/turbovax-web/blob/main/app/controllers/locations_controller.rb): fetches location records on page load
